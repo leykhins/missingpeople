@@ -22738,7 +22738,7 @@ textarea[resize='horizontal']
 
 .docs .sidenav-header .navbar-brand img
 {
-    height: 1.5rem;
+    height: 3.5rem;
 }
 
 .docs .main-content-title + .nav-tabs
@@ -23441,7 +23441,7 @@ textarea[resize='horizontal']
 {
     .navbar-expand-sm .navbar-brand img
     {
-        height: 1.75rem;
+        height: 3.75rem;
     }
     .navbar-expand-sm .navbar-brand.dropdown-toggle:after
     {
@@ -23829,7 +23829,7 @@ textarea[resize='horizontal']
 {
     .navbar-expand-lg .navbar-brand img
     {
-        height: 5.75rem;
+        height: 5.75rem !important;
     }
     .navbar-expand-lg .navbar-brand.dropdown-toggle:after
     {
@@ -24215,7 +24215,7 @@ textarea[resize='horizontal']
 
 .navbar-expand .navbar-brand img
 {
-    height: 1.75rem;
+    height: 5.75rem;
 }
 
 .navbar-expand .navbar-brand.dropdown-toggle:after
@@ -24375,7 +24375,7 @@ textarea[resize='horizontal']
 
 .navbar-expand .navbar-brand img
 {
-    height: 1.75rem;
+    height: 5.75rem;
 }
 
 .navbar-expand .navbar-brand.dropdown-toggle:after
@@ -25702,7 +25702,7 @@ article p
 {
     .navbar-expand-sm .navbar-brand img
     {
-        height: 1.75rem;
+        height: 3.75rem;
     }
     .navbar-expand-sm .navbar-brand.dropdown-toggle:after
     {
@@ -25862,7 +25862,7 @@ article p
 {
     .navbar-expand-sm .navbar-brand img
     {
-        height: 1.75rem;
+        height: 3.75rem;
     }
     .navbar-expand-sm .navbar-brand.dropdown-toggle:after
     {
@@ -25896,7 +25896,7 @@ article p
 {
     .navbar-expand-md .navbar-brand img
     {
-        height: 1.75rem;
+        height: 3.75rem;
     }
     .navbar-expand-md .navbar-brand.dropdown-toggle:after
     {
@@ -26056,7 +26056,7 @@ article p
 {
     .navbar-expand-md .navbar-brand img
     {
-        height: 1.75rem;
+        height: 3.75rem;
     }
     .navbar-expand-md .navbar-brand.dropdown-toggle:after
     {
@@ -26090,7 +26090,7 @@ article p
 {
     .navbar-expand-lg .navbar-brand img
     {
-        height: 1.75rem;
+        height: 5.75rem;
     }
     .navbar-expand-lg .navbar-brand.dropdown-toggle:after
     {
@@ -26250,7 +26250,7 @@ article p
 {
     .navbar-expand-lg .navbar-brand img
     {
-        height: 1.75rem;
+        height: 5.75rem;
     }
     .navbar-expand-lg .navbar-brand.dropdown-toggle:after
     {
@@ -26284,7 +26284,7 @@ article p
 {
     .navbar-expand-xl .navbar-brand img
     {
-        height: 1.75rem;
+        height: 5.75rem;
     }
     .navbar-expand-xl .navbar-brand.dropdown-toggle:after
     {
@@ -26444,7 +26444,7 @@ article p
 {
     .navbar-expand-xl .navbar-brand img
     {
-        height: 1.75rem;
+        height: 5.75rem;
     }
     .navbar-expand-xl .navbar-brand.dropdown-toggle:after
     {
@@ -26476,7 +26476,7 @@ article p
 
 .navbar-expand .navbar-brand img
 {
-    height: 1.75rem;
+    height: 3.75rem;
 }
 
 .navbar-expand .navbar-brand.dropdown-toggle:after
@@ -26636,7 +26636,7 @@ article p
 
 .navbar-expand .navbar-brand img
 {
-    height: 1.75rem;
+    height: 3.75rem;
 }
 
 .navbar-expand .navbar-brand.dropdown-toggle:after
@@ -28124,3 +28124,44 @@ section
 }
 
 /*# sourceMappingURL=quick-website.css.map */
+
+.mp-details
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mp-img-bottom
+{
+    background: #E74C3C;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+.mp-img-bottom-text
+{
+    color: #ffffff;
+}
+
+.mp-list
+{
+    font-weight: bold;
+}
+
+.mp-list span
+{
+    color: #E74C3C;
+}
+
+.mp-name-text
+{
+    color: #E74C3C;
+}
+
+.navbar-logo
+{
+    width: 150px !important;
+
+}

@@ -129,31 +129,119 @@
         </div>
     </nav>
     <!-- Main content -->
-    <section class="slice py-7">
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
         <div class="container">
-            <div class="row row-grid align-items-center">
-                <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
-                    <!-- Image -->
-                    <figure class="w-100">
-                        <img alt="Image placeholder" src="assets/img/svg/illustrations/hero.svg" class="img-fluid mw-md-120">
-                    </figure>
+            <!-- Missing Person -->
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 mb-5 mb-sm-0">
+                    <div data-animate-hover="2">
+                        <div class="animate-this">
+                            <a href="#">
+                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-7.jpg">
+                            </a>
+                        </div>
+                        <div class="mp-img-bottom">
+                            <h4 class="mp-img-bottom-text mb-0">Jane Doe (<span class="mp-location">Ikeja, Lagos</span>)</h4>
+                            <h2 class="mp-img-bottom-text mb-0">MISSING</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
-                    <!-- Heading -->
-                    <h1 class="display-4 text-center text-md-left mb-3">
-                        Is someone you love <strong class="text-primary">missing?</strong>
-                    </h1>
-                    <!-- Text -->
-                    <p class="lead text-center text-md-left text-muted">
-                        You can report a missing person or share when last sighted the person. A community where we help find our loved ones, because we can.
-                    </p>
-                    <!-- Buttons -->
-                    <div class="text-center text-md-left mt-5">
-                        <a href="#" class="btn btn-primary btn-icon" target="_blank">
-                            <span class="btn-inner--text">Report Missing Person</span>
-                            <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
-                        </a>
-                        <a href="#" class="btn btn-neutral btn-icon d-none d-lg-inline-block" target="_blank">Report Sighting</a>
+                <div class="col-lg-8 col-sm-8 mb-0">
+                    <div class="mp-box">
+                        <div class="mp-title-text">
+                            <h2>Missing Person</h2>
+                        </div>
+                        <div class="mp-name">
+                            <h3 class="mp-name-text">Jane Doe</h3>
+                        </div>
+                        <div class="ms-name">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id consectetur elit. Phasellus turpis enim, aliquet vel tellus sit amet, egestas tristique tortor. Nam ut dui rhoncus est efficitur venenatis. Phasellus dignissim, felis ut eleifend tincidunt, mauris neque porta quam, eu iaculis dui turpis sollicitudin mi.</p>
+                        </div>
+                        <div class="">
+                            <ul class="mp-details">
+                                <li class="mp-list">Age at disappearance: <span>18</span></li>
+                                <li class="mp-list">Missing since: <span>20-OCT-2020</span></li>
+                                <li class="mp-list">Missing from: <span>Ikeja, Lagos</span></li>
+                            </ul>
+                        </div>
+                        <div class="ms-name mt-2">
+                            <button type="button" class="btn btn-primary btn-icon" data-toggle="modal" data-target="#reportSighting">
+                                <span class="btn-inner--text">Report Sighting</span><span class="btn-inner--icon">
+        <i data-feather="eye"></i>
+    </span>
+                            </button>
+                            <button type="button" class="btn btn-soft-primary btn-icon">
+                                <span class="btn-inner--text">Download Poster</span><span class="btn-inner--icon">
+        <i data-feather="download"></i>
+    </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Report Sighting Form -->
+        <div class="modal fade" id="reportSighting" tabindex="-1" role="dialog" aria-labelledby="reportSightingLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Report the sighting of <span>Jane Doe</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="missingPersonName">Missing Person Name</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Jane Doe" id="missingPersonName">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="missingTime">Missing Time</label>
+                                    <input type="time" class="form-control form-control-sm" placeholder="" id="missingTime">
+                                </div>
+                                <div class="form-group col-md-4>
+                                    <label for="missingDate">Missing Date</label>
+                                    <input type="date" class="form-control form-control-sm" placeholder="" id="missingDate">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="missingLocation">Location</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Where did you see the missing person?" id="missingLocation">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="missingAppearance">What did the missing person look like?</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder=" " id="missingAppearance">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="missingAppearance2">What were they wearing?</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder=" " id="missingAppearance2">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-soft-primary active">
+                                            <input type="radio" name="options" id="checkboxButton2" autocomplete="off" checked> Reveal Identity
+                                        </label>
+                                        <label class="btn btn-soft-primary">
+                                            <input type="radio" name="options" id="checkboxButton3" autocomplete="off"> Report Anonymously
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
@@ -166,12 +254,12 @@
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-6">
                     <span class="badge badge-soft-success badge-pill badge-lg">
-                        Just Added
+                        Help Us Find
                     </span>
-                    <h2 class=" mt-4">Recently Missing People</h2>
+                    <h2 class=" mt-4">Other Missing People</h2>
                 </div>
             </div>
-            <!-- Missing People -->
+            <!-- Missing People based on location -->
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div data-animate-hover="2">
@@ -217,60 +305,6 @@
                         <div class="animate-this">
                             <a href="#">
                                 <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-4.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">Jane Doe</h5>
-                            <p class="text-muted text-sm mb-0">Missing since: <span>20-OCT-2020</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-5.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">John Doe</h5>
-                            <p class="text-muted text-sm mb-0">Missing since: <span>20-OCT-2020</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-6.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">Jane Doe</h5>
-                            <p class="text-muted text-sm mb-0">Missing since: <span>20-OCT-2020</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-7.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">John Doe</h5>
-                            <p class="text-muted text-sm mb-0">Missing since: <span>20-OCT-2020</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-8.jpg">
                             </a>
                         </div>
                         <div class="mt-3">
